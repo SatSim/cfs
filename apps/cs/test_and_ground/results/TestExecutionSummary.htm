@@ -1,0 +1,6129 @@
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Test Execution Summary</title>
+    <style type="text/css" media="screen">
+body, table { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; }
+table.display { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; width: 100%;}
+table.display2 { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; width: 95%;}
+.display td, .display2 td { vertical-align: top; font-size: 9pt;}
+table.list { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; width: 95%; border-width: 1px; border-style: solid; border-color: #333399; border-collapse: collapse; padding: 5px 5px 5px 5px; }
+.list th { color: #000000; background-color: #F9F9E3; border-width: 1px; border-style: solid; border-color: #333399; }
+.list td { background-color: #F9F7F7; vertical-align: top; border-width: 1px; border-style: solid; border-color: #333399; padding: 5px 5px 5px 5px; }
+table.list2 { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; border-width: 0px; border-style: solid; border-color: #333399; padding: 0px 0px 0px 0px; }
+.list2 th { font-size: 11pt; color: #333399; text-align: left; text-decoration: underline; background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.list2 td { background-color: #FFFFFF; vertical-align: top; padding: 2px 2px 2px 2px; }
+table.list3 { font-family: Arial, Helvetica, Tahoma; font-size: 9pt; width: 100%; border-width: 1px; border-style: solid; border-color: #333399; border-collapse: collapse; padding: 0px 0px 0px 0px; }
+.list3 th { color: #000000; background-color: #ECECEC; border-width: 1px 0px 1px 0px; border-style: solid; border-color: #333399; padding: 5px 5px 5px 5px; }
+.list3 td { background-color: #F9F7F7; vertical-align: top; border-style: solid; border-color: #333399; border-width: 1px 0px 1px 0px; padding: 5px 5px 5px 5px; }
+td.logo { width: 10%; }
+.border { border-width: 0px; border-style: solid; border-color: #333399; padding: 2px 2px 2px 2px; }
+.center { text-align: center; }
+.right { text-align: right; }
+.nowrap { white-space: nowrap; }
+.title { font-size: 16pt; color: #333399; font-weight: bold; text-align: center; }
+.date { font-size: 10pt; color: #333399; font-weight: bold; text-align: right; }
+.header { font-size: 11pt; color: #000000; text-align: center; }
+.footer { font-size: 9pt; color: #999999; text-align: left; }
+.heading1 { font-size: 11pt; color: #000000; font-weight: bold; background-color: #F6E78C; }
+.heading2 { font-size: 11pt; color: #333399; font-weight: bold; background-color: #F6E78C; }
+.heading3 { font-size: 11pt; color: #000000; font-weight: bold; background-color: #E6E6CB; }
+.heading4 { font-size: 11pt; color: #333399; font-weight: bold; background-color: #E6E6CB; }
+.heading5 { font-size: 11pt; color: #000000; font-weight: bold; background-color: #CFCF9D; }
+.heading6 { font-size: 11pt; color: #333399; font-weight: bold; background-color: #CFCF9D; }
+.heading7 { font-size: 15pt; color: #000000; font-weight: bold; background-color: #CFCF9D; }
+.heading8 { font-size: 10pt; color: #000000; font-weight: bold; text-align: center; background-color: #F5EFCA; }
+.heading9 { font-size: 10pt; color: #000000; font-weight: bold; background-color: #F6E78C; }
+.grouping1 { font-size: 10pt; color: #333399; font-weight: bold; background-color: #CFCF9D; }
+.grouping2 { font-size: 10pt; color: #000000; font-weight: bold; background-color: #CFCF9D; }
+.grouping3 { font-size: 9pt; color: #333399; font-weight: bold; background-color: #E6E6CB; }
+.odd_row { background-color: #F8F3F7; }
+.even_row { background-color: #FFFBFF; }
+.level1 { background-color: #FFEFF7; padding: 2px 2px 2px 2px; }
+.level2 { background-color: #F7E7EF; padding: 2px 2px 2px 2px; }
+.level2_indent { background-color: #F7E7EF; padding: 2px 2px 2px 12px; }
+.level3 { background-color: #EFDFE7; padding: 2px 2px 2px 2px; }
+.level3_indent { background-color: #EFDFE7; padding: 2px 2px 2px 22px; }
+.level4 { background-color: #E7D7DF; padding: 2px 2px 2px 2px; }
+.level4_indent { background-color: #E7D7DF; padding: 2px 2px 2px 32px; }
+.level5 { background-color: #DFCFD7; padding: 2px 2px 2px 2px; }
+.level5_indent { background-color: #DFCFD7; padding: 2px 2px 2px 42px; }
+.level6 { background-color: #D1BFC8; padding: 2px 2px 2px 2px; }
+.level6_indent { background-color: #D1BFC8; padding: 2px 2px 2px 52px; }
+.level7 { background-color: #C2B0B9; padding: 2px 2px 2px 2px; }
+.level7_indent { background-color: #C2B0B9; padding: 2px 2px 2px 62px; }
+.level8 { background-color: #B0A0A8; padding: 2px 2px 2px 2px; }
+.level8_indent { background-color: #B0A0A8; padding: 2px 2px 2px 72px; }
+.context_backward_level4_indent { background-color: #E7D7DF; padding: 2px 2px 2px 2px; }
+.context_backward_level3_indent { background-color: #EFDFE7; padding: 2px 2px 2px 12px; }
+.context_backward_level2_indent { background-color: #F7E7EF; padding: 2px 2px 2px 22px; }
+.context_backward_level1_indent { background-color: #FFEFF7; padding: 2px 2px 2px 32px; }
+.context { color: #333399; font-weight: bold; background-color: #FFFFFF; border-style: solid; border-color: #000000; border-width: 1px; padding: 2px 2px 2px 2px; }
+.context_indent { color: #333399; font-weight: bold; background-color: #FFFFFF; border-style: solid; border-color: #000000; border-width: 1px; padding: 2px 2px 2px 42px; }
+.context_forward_level1_indent { background-color: #FFEFF7; padding: 2px 2px 2px 52px; }
+.context_forward_level2_indent { background-color: #F7E7EF; padding: 2px 2px 2px 62px; }
+.context_forward_level3_indent { background-color: #EFDFE7; padding: 2px 2px 2px 72px; }
+.context_forward_level4_indent { background-color: #E7D7DF; padding: 2px 2px 2px 82px; }
+.document_level1 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.document_level2 { background-color: #FFFFFF; padding: 2px 2px 2px 12px; }
+.document_level3 { background-color: #FFFFFF; padding: 2px 2px 2px 22px; }
+.document_level4 { background-color: #FFFFFF; padding: 2px 2px 2px 32px; }
+.underline { text-decoration: underline; }
+.bold { color: #000000; font-weight: bold; }
+.bold_large { font-size: 12pt; color: #000000; font-weight: bold; }
+.bold_very_large { font-size: 14pt; color: #000000; font-weight: bold; }
+.bold_italic { color: #000000; font-weight: bold; font-style: italic; }
+.bold_underline { color: #000000; font-weight: bold; text-decoration: underline; }
+.bold_color { color: #333399; font-weight: bold; }
+.bold_color_large { font-size: 12pt; color: #333399; font-weight: bold; }
+.bold_color_italic { color: #333399; font-weight: bold; font-style: italic; }
+.bold_color_underline { color: #333399; font-weight: bold; text-decoration: underline; }
+.bold_color_underline_large { font-size: 11pt; color: #333399; font-weight: bold; text-decoration: underline; }
+.hr_default { height:1px; width:100%; color: #000000; background:#000000; }
+.calendar_no_date_cell { background-color: #F3F3F3; }
+</style>
+
+    <style type="text/css" media="print">
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+tbody { display:table-row-group; }
+body, table { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; }
+table.display { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; width: 100%;}
+table.display2 { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; width: 95%;}
+.display td, .display2 td { vertical-align: top; font-size: 11pt;}
+table.list { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; width: 95%; border-width: 1px; border-style: solid; border-color: #000000; border-collapse: collapse; padding: 5px 5px 5px 5px; }
+.list th { color: #000000; background-color: #FFFFFF; border-width: 1px; border-style: solid; border-color: #000000; }
+.list td { background-color: #FFFFFF; vertical-align: top; border-width: 1px; border-style: solid; border-color: #000000; padding: 5px 5px 5px 5px; }
+table.list2 { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; border-width: 0px; border-style: solid; border-color: #000000; padding: 0px 0px 0px 0px; }
+.list2 th { font-size: 13pt; color: #000000; text-align: left; text-decoration: underline; background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.list2 td { background-color: #FFFFFF; vertical-align: top; padding: 2px 2px 2px 2px; }
+table.list3 { font-family: Times New Roman, Book Antiqua, Garamond; font-size: 11pt; width: 100%; border-width: 1px; border-style: solid; border-color: #000000; border-collapse: collapse; padding: 0px 0px 0px 0px; }
+.list3 th { color: #000000; background-color: #FFFFFF; border-width: 1px 0px 1px 0px; border-style: solid; border-color: #000000; padding: 5px 5px 5px 5px; }
+.list3 td { background-color: #FFFFFF; vertical-align: top; border-style: solid; border-color: #000000; border-width: 1px 0px 1px 0px; padding: 5px 5px 5px 5px; }
+td.logo { width: 10%; }
+.border { border-width: 0px; border-style: solid; border-color: #000000; padding: 2px 2px 2px 2px; }
+.center { text-align: center; }
+.right { text-align: right; }
+.nowrap { white-space: nowrap; }
+.title { font-size: 18pt; color: #000000; font-weight: bold; text-align: center; }
+.date { font-size: 12pt; color: #000000; font-weight: bold; text-align: right; }
+.header { font-size: 13pt; color: #000000; text-align: center; }
+.footer { font-size: 11pt; color: #999999; text-align: left; }
+.heading1 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading2 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading3 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading4 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading5 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading6 { font-size: 13pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading7 { font-size: 17pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.heading8 { font-size: 12pt; color: #000000; font-weight: bold; text-align: center; background-color: #FFFFFF; }
+.heading9 { font-size: 12pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.grouping1 { font-size: 12pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.grouping2 { font-size: 12pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.grouping3 { font-size: 11pt; color: #000000; font-weight: bold; background-color: #FFFFFF; }
+.odd_row { background-color: #FFFFFF; }
+.even_row { background-color: #FFFFFF; }
+.level1 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level2 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level2_indent { background-color: #FFFFFF; padding: 2px 2px 2px 12px; }
+.level3 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level3_indent { background-color: #FFFFFF; padding: 2px 2px 2px 22px; }
+.level4 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level4_indent { background-color: #FFFFFF; padding: 2px 2px 2px 32px; }
+.level5 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level5_indent { background-color: #FFFFFF; padding: 2px 2px 2px 42px; }
+.level6 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level6_indent { background-color: #FFFFFF; padding: 2px 2px 2px 52px; }
+.level7 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level7_indent { background-color: #FFFFFF; padding: 2px 2px 2px 62px; }
+.level8 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.level8_indent { background-color: #FFFFFF; padding: 2px 2px 2px 72px; }
+.context_backward_level4_indent { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.context_backward_level3_indent { background-color: #FFFFFF; padding: 2px 2px 2px 12px; }
+.context_backward_level2_indent { background-color: #FFFFFF; padding: 2px 2px 2px 22px; }
+.context_backward_level1_indent { background-color: #FFFFFF; padding: 2px 2px 2px 32px; }
+.context { color: #000000; font-weight: bold; background-color: #FFFFFF; border-style: solid; border-color: #000000; border-width: 1px; padding: 2px 2px 2px 2px; }
+.context_indent { color: #000000; font-weight: bold; background-color: #FFFFFF; border-style: solid; border-color: #000000; border-width: 1px; padding: 2px 2px 2px 42px; }
+.context_forward_level1_indent { background-color: #FFFFFF; padding: 2px 2px 2px 52px; }
+.context_forward_level2_indent { background-color: #FFFFFF; padding: 2px 2px 2px 62px; }
+.context_forward_level3_indent { background-color: #FFFFFF; padding: 2px 2px 2px 72px; }
+.context_forward_level4_indent { background-color: #FFFFFF; padding: 2px 2px 2px 82px; }
+.document_level1 { background-color: #FFFFFF; padding: 2px 2px 2px 2px; }
+.document_level2 { background-color: #FFFFFF; padding: 2px 2px 2px 12px; }
+.document_level3 { background-color: #FFFFFF; padding: 2px 2px 2px 22px; }
+.document_level4 { background-color: #FFFFFF; padding: 2px 2px 2px 32px; }
+.underline { text-decoration: underline; }
+.bold { color: #000000; font-weight: bold; }
+.bold_large { font-size: 14pt; color: #000000; font-weight: bold; }
+.bold_very_large { font-size: 16pt; color: #000000; font-weight: bold; }
+.bold_italic { color: #000000; font-weight: bold; font-style: italic; }
+.bold_underline { color: #000000; font-weight: bold; text-decoration: underline; }
+.bold_color { color: #000000; font-weight: bold; }
+.bold_color_large { font-size: 14pt; color: #000000; font-weight: bold; }
+.bold_color_italic { color: #000000; font-weight: bold; font-style: italic; }
+.bold_color_underline { color: #000000; font-weight: bold; text-decoration: underline; }
+.bold_color_underline_large { font-size: 13pt; color: #000000; font-weight: bold; text-decoration: underline; }
+.hr_default { height: 1px; width: 100%; color: #000000; background: #000000; }
+.calendar_no_date_cell { background-color: #FFFFFF; }
+</style>
+
+</head>
+
+
+
+<body>
+<table class="display">
+<thead>
+<tr>
+    <td>
+        <table class="display">
+        <tr>
+            <td class="logo"><img src="http://gs580v-fsbmks07.ndc.nasa.gov:7001//images/logos/582 Logo Small New.jpg"></td>
+            <td>
+                <div class="title">Test Execution Summary</div><p>
+                <div class="header">Test Status with Linked Requirements and DCRs
+(Arranged in the order of Test Name)</div>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td><div class="date">Mar 3, 2015</div></td>
+</tr>
+</thead>
+
+<tfoot>
+<tr><td><div class="footer"></div></td></tr>
+</tfoot>
+
+<tbody>
+<!-- block ID=4454-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_AppCode -- 4454</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_AppCode</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Feb 27, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">1802.57 seconds; 30.0429 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All requirements passed</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2652</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2003</td>
+            
+            <td>Upon receipt of a Disable Non-volatile Checksumming command, CS shall disable non-volatile checksumming</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2674</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3003</td>
+            
+            <td>Upon receipt of a Disable OS code segment command, CS shall Disable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2688</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3008</td>
+            
+            <td>Upon receipt of a Disable cFE code segment command, CS shall Disable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2694</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4000</td>
+            
+            <td>Checksum shall calculate CRCs for each Table-Defined Application&#8217;s code segment and compare them against the corresponding Application&#8217;s baseline code segment CRC if: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; App code segment checksumming is Enabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming of the individual Application Code Segment is Enabled</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2696</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4000.1</td>
+            
+            <td>If the Application&#8217;s code segment CRC is not equal to the corresponding &nbsp;Application&#8217;s baseline code segment CRC, CS shall increment the Application Code Segment CRC Miscompare Counter and send an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2698</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4000.2</td>
+            
+            <td>If the table-defined Application code segment is invalid, CS shall send an event message and skip that Application code segment.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2700</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4001</td>
+            
+            <td>Upon receipt of a Enable Application checksumming command, CS shall enable checksumming of all Application Code segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2702</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4002</td>
+            
+            <td>Upon receipt of a Disable Application checksumming command, CS shall Disable checksumming of all Application Code segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2704</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4003</td>
+            
+            <td>Upon receipt of a Enable Application code segment command, CS shall enable checksumming of the command-specified Application.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2706</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4004</td>
+            
+            <td>Upon receipt of a Disable Application code segment command, CS shall Disable checksumming of the command-specified Application.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2708</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4005</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Recompute Application Code Segment CRC command, CS shall recompute the baseline CRC for the Application</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2710</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4005.1</td>
+            
+            <td>Once the baseline CRC is computed, CS shall generate an event message containing the baseline CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4441</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4005.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p><p>&#160;</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2712</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4006</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Report Application code segment CRC command, CS shall send an event message containing the baseline Application code segment CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2714</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4007</td>
+            
+            <td>If the command-specified Application is invalid (for any Application Code Segment command where the Application is a command argument, CS shall reject the command and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2716</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the Application code segment memory segments via a dump-only table</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2728</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5002</td>
+            
+            <td>Upon receipt of a Disable Table Checksumming command, CS shall Disable checksumming of all Tables.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2750</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6002</td>
+            
+            <td>Upon receipt of a Disable User-Defined Memory Checksumming command, CS shall Disable checksumming of all User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2766</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS7000</td>
+            
+            <td>The CS software shall limit the amount of bytes processed during each of its execution cycles to a maximum of &lt;PLATFORM_DEFINED&gt; bytes</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+<!-- block ID=4454-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4454-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4454-->
+<!-- block ID=4455-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_CoreCode -- 4455</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_CoreCode</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Feb 27, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">1809.95 seconds; 30.1658 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All Requirements passed.</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2668</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3000</td>
+            
+            <td>Checksum shall calculate CRC for the OS code segment and compare them against the corresponding baseline OS code segment CRC if: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; OS segment checksumming is Enabled <BR>  <BR> </td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2670</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3000.1</td>
+            
+            <td>If the OS code segment CRC is not equal to the baseline OS code segment CRC, CS shall increment the OS Code Segment CRC Miscompare Counter and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2672</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3002</td>
+            
+            <td>Upon receipt of a Enable OS code segment command, CS shall enable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2674</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3003</td>
+            
+            <td>Upon receipt of a Disable OS code segment command, CS shall Disable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2676</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3004</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Recompute OS code segment CRC command, CS shall recompute the baseline CRC for the OS code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2678</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3004.1</td>
+            
+            <td>Once the baseline CRC is computed, CS shall generate an event message containing the baseline CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4451</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3004.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2680</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3005</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Report OS code segment CRC command, CS shall send an event message containing the baseline OS code segment CRC.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2682</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3006</td>
+            
+            <td>Checksum shall calculate CRC for the cFE code segment and compare them against the corresponding baseline cFE code segment CRC if: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; cFE segment checksumming is Enabled <BR>  <BR>  <BR> </td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2684</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3006.1</td>
+            
+            <td>If the cFE code segment CRC is not equal to the baseline cFE code segment CRC, CS shall increment the cFE Code Segment CRC Miscompare Counter and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2686</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3007</td>
+            
+            <td>Upon receipt of a Enable cFE code segment command, CS shall enable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2688</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3008</td>
+            
+            <td>Upon receipt of a Disable cFE code segment command, CS shall Disable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2690</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3009</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Recompute cFE Code Segment CRC command, CS shall recompute the baseline CRC for the cFE Code Segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4429</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3009.1</td>
+            
+            <td><!-- MKS HTML --><p>Once the baseline CRC is computed, CS shall generate an event message containing the baseline CRC</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4439</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3009.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p><p></p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2692</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3010</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Report cFE code segment CRC command, CS shall send an event message containing the baseline cFE code segment CRC.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+<!-- block ID=4455-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4455-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4455-->
+<!-- block ID=4456-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_GenCmds -- 4456</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_GenCmds</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Feb 27, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">477.894 seconds; 8.05046 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All Requirements passed. CS_1005 passed via inspection.</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>15241</td>
+            
+            <td>CFS_FSW_DCR</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>Add &quot;Child Task In Use&quot; flag to CS housekeeping telemetry packet</td>
+            
+            <td>Ready For Closure</td>
+            
+            <td>DCR was tested and passed</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2634</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1000</td>
+            
+            <td>Upon receipt of a No-Op command, CS shall increment the CS Valid Command Counter and generate an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2636</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1001</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Reset command, CS shall reset the following housekeeping variables to a value of zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-defined Memory CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes through all of the checksum areas)</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2644</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1005</td>
+            
+            <td><!-- MKS HTML -->CS shall use the &lt;MISSION_DEFINED&gt; CRC algorithm to compute the CRCs for any segment</td>
+            
+            <td>Inspection</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p>The algorithm is defined as a mission configuration parameter included into the software. This include file was inspected and the requirement verified.</p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2772</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8002</td>
+            
+            <td>Upon receipt of a One Shot command, CS shall calculate the CRC starting at the command-specified address for the command-specified bytes.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2774</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8002.1</td>
+            
+            <td>CS shall issue an event message containing the CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4447</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8002.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a One Shot CRC command, CS shall reject the command</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2776</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8003</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Cancel One Shot command, CS shall stop the current One Shot calculation.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+<!-- block ID=4456-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4456-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4456-->
+<!-- block ID=4457-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_NVMem -- 4457</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_NVMem</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Mar 2, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">2090.88 seconds; 34.848 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All Requirements passed</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2646</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2001</td>
+            
+            <td>The Checksum App shall calculate CRCs for each Non-volatile segment and compare them against the corresponding baseline Non-volatile segment CRCs if: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile segment checksumming is Enabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming for the individual Non-volatile segment is Enabled <BR> </td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2648</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2001.1</td>
+            
+            <td>If the Non-volatile segment CRC is not equal to the corresponding baseline CRC, CS shall increment the Non-volatile CRC Miscompare Counter and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2650</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2002</td>
+            
+            <td>Upon receipt of a Enable Non-volatile Checksumming command, CS shall enable non-volatile checksumming</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2652</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2003</td>
+            
+            <td>Upon receipt of a Disable Non-volatile Checksumming command, CS shall disable non-volatile checksumming</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2654</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2004</td>
+            
+            <td>Upon receipt of a Enable Non-volatile Segment command, CS shall enable checksumming of the command-specified non-volatile segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2656</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2005</td>
+            
+            <td>Upon receipt of a Disable Non-volatile Segment command, CS shall disable checksumming of the command-specified non-volatile segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2658</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2006</td>
+            
+            <td>Upon receipt of a Recompute Non-volatile Checksum Segment command, CS shall recompute the baseline checksum for the command-specified non-volatile segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4437</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2006.1</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p><p></p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2660</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2007</td>
+            
+            <td>Upon receipt of a Report Non-volatile Checksum Segment command, CS shall send an event message containing the baseline checksum for the command-specified non-volatile segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2662</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2008</td>
+            
+            <td>Upon receipt of a Get Non-volatile Checksum Segment command, CS shall send an event message containing the segment number for the command-specified non-volatile address</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2664</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2009</td>
+            
+            <td>If a command-specified segment is invalid (for any of the non-volatile memory commands where segment is a command argument), CS shall reject the command and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2666</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2010</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the non-volatile memory segments via a dump-only table</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2674</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3003</td>
+            
+            <td>Upon receipt of a Disable OS code segment command, CS shall Disable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2688</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3008</td>
+            
+            <td>Upon receipt of a Disable cFE code segment command, CS shall Disable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+<!-- block ID=4457-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4457-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4457-->
+<!-- block ID=4460-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_Reset -- 4460</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_Reset</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Feb 27, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">4713.82 seconds; 78.5637 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All requirements passed with 6 passing after post-test analysis.</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2666</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2010</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the non-volatile memory segments via a dump-only table</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2716</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the Application code segment memory segments via a dump-only table</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2740</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the tables via a dump-only table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2764</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for all the User-Defined Memory via a dump-only table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2782</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9002</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRCs for the following regions: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2784</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9003</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRCs for Non-volatile segments based on the corresponding table definition for up to &lt;PLATFORM_DEFINED&gt; segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2786</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9003.1</td>
+            
+            <td><!-- MKS HTML -->If the address range for any of the Non-volatile segments is Invalid, CS shall send an event message and disable Non-volatile Checksumming</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.11.2 shows the events for a Power-On reset. Step 5.14.2 shows the events for a Processor Reset. Step 5.15.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2788</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9003.2</td>
+            
+            <td>CS shall send an event message and disable Non-volatile Checksumming, if the state is not one of the following: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; disabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; empty</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.22.2 shows the events for a Power-On reset. Step 5.25.2 shows the events for a Processor Reset. Step 5.26.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2790</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9004</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRC for the total of all of non-volatile segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2792</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9005</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRCs for the Application code segments region based on the corresponding table definition for up to a &lt;PLATFORM_DEFINED&gt; Applications</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2794</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9005.1</td>
+            
+            <td>CS shall send an event message and disable Application code segment Checksumming, if the state is not one of the following: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; disabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; empty</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.11.2 shows the events for a Power-On reset. Step 5.14.2 shows the events for a Processor Reset. Step 5.15.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2796</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9006</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRCs for the tables specified in the corresponding table definition for up to &lt;PLATFORM_DEFINED&gt; tables</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2798</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9006.1</td>
+            
+            <td>CS shall send an event message and disable Table Checksumming, if the state is not one of the following: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; disabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; empty</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.11.2 shows the events for a Power-On reset. Step 5.14.2 shows the events for a Processor Reset. Step 5.15.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2800</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9007</td>
+            
+            <td>Upon any Initialization, CS shall compute baseline CRCs for the User-Defined memory region based on the corresponding table definition for up to &lt;PLATFORM_DEFINED&gt; memory segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2802</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9007.1</td>
+            
+            <td><!-- MKS HTML -->If the address range for any of the User-Defined Memory is Invalid, CS shall send an event message and disable User-Defined Memory Checksumming</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.11.2 shows the events for a Power-On reset. Step 5.14.2 shows the events for a Processor Reset. Step 5.15.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+<!-- block ID=4460-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2804</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9007.2</td>
+            
+            <td>CS shall send an event message and disable Checksumming of the User-Defined Memory, if the state is not one of the following: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; disabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; empty</td>
+            
+            <td>Analysis</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><span>The log file of the CS_Reset test contains the event messages issued when the Checksum application starts. Step 5.22.2 shows the events for a Power-On reset. Step 5.25.2 shows the events for a Processor Reset. Step 5.26.2 shows the events for an Application Reset. Checksumming was disabled.</span></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4460-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4460-->
+<!-- block ID=4458-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_Table -- 4458</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_Table</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Mar 2, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">2458.59 seconds; 40.9765 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All Requirements passed</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>22265</td>
+            
+            <td>CFS_FSW_DCR</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>CS does not recalculate the baseline CRC of a table after a Table Load</td>
+            
+            <td>Test Completed</td>
+            
+            <td>DCR was tested and passed</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>22897</td>
+            
+            <td>CFS_FSW_DCR</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>CS: Issuing a RecomputeTableName command on the DefTablesTable causes a Miscompare to occur</td>
+            
+            <td>Test Completed</td>
+            
+            <td>DCR was tested and passed</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2652</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2003</td>
+            
+            <td>Upon receipt of a Disable Non-volatile Checksumming command, CS shall disable non-volatile checksumming</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2674</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3003</td>
+            
+            <td>Upon receipt of a Disable OS code segment command, CS shall Disable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2688</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3008</td>
+            
+            <td>Upon receipt of a Disable cFE code segment command, CS shall Disable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2702</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4002</td>
+            
+            <td>Upon receipt of a Disable Application checksumming command, CS shall Disable checksumming of all Application Code segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2718</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5000</td>
+            
+            <td>Checksum shall calculate CRCs for each Table-Defined Table and compare them against the corresponding Table&#8217;s baseline CRC if: <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; Table checksumming is Enabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming of the Individual Table is Enabled</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2720</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5000.1</td>
+            
+            <td>If the Table&#8217;s &nbsp;CRC is not equal to the corresponding &nbsp;Table&#8217;s baseline CRC and the table has not been modified (thru a table load), CS shall increment the Table CRC Miscompare Counter and send an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2722</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5000.2</td>
+            
+            <td>If the Table&#8217;s CRC is not equal to the corresponding &nbsp;Table&#8217;s baseline CRC and the table has been modified (thru a table load), CS shall recompute the table baseline CRC.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2724</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5000.3</td>
+            
+            <td>If the table-defined Table &nbsp;is invalid, CS shall send an event message and skip that Table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2726</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5001</td>
+            
+            <td>Upon receipt of a Enable Table Checksumming command, CS shall enable checksumming of all Tables.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2728</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5002</td>
+            
+            <td>Upon receipt of a Disable Table Checksumming command, CS shall Disable checksumming of all Tables.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2730</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5003</td>
+            
+            <td>Upon receipt of a Enable Table Name command, CS shall enable checksumming of the command-specified Table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2732</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5004</td>
+            
+            <td>Upon receipt of a Disable Table Name command, CS shall Disable checksumming of the command-specified Table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4431</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5005</td>
+            
+            <td><!-- MKS HTML --><p>Upon receipt of a Recompute Table CRC Command, CS shall recompute the baseline CRC for the command-specified table</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2734</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5005.1</td>
+            
+            <td>Once the baseline CRC is computed, CS shall generate an event message containing the baseline CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4443</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5005.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2736</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5006</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Report Table CRC command, CS shall send an event message containing the baseline Table CRC for the command-specified table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2738</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5007</td>
+            
+            <td>If the command-specified Table in invalid (for any CS Table command where a table name is a command argument ), CS shall reject the command and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2740</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for the tables via a dump-only table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2750</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6002</td>
+            
+            <td>Upon receipt of a Disable User-Defined Memory Checksumming command, CS shall Disable checksumming of all User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2766</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS7000</td>
+            
+            <td>The CS software shall limit the amount of bytes processed during each of its execution cycles to a maximum of &lt;PLATFORM_DEFINED&gt; bytes</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+<!-- block ID=4458-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4458-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4458-->
+<!-- block ID=4459-->
+
+<!-- Display issue heading -->
+<tr><td><div class="heading7">CS_UserMem -- 4459</div></td></tr>
+<!-- Display issue field names and values -->
+<tr><td>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Description:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Test Name:</span></td><td><span class="bold">CS_UserMem</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Current Build:</span></td><td><span class="bold">2.3.1.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Procedure LOC:</span></td><td><span class="bold"><DIV ALIGN=right>&nbsp;</DIV></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Assigned To:</span></td><td><span class="bold">Walt Moleski (wmoleski)</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Testbed:</span></td><td><span class="bold">cFE 6.4.1.0; OSAL 4.1.1.0; PSP 1.2.0.0</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Checksum:</span></td><td><span class="bold">61647</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Completion Date:</span></td><td><span class="bold">Mar 2, 2015</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution_Time:</span></td><td><span class="bold">2072.09 seconds; 34.5348 minutes</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Comments:</span></td><td><span class="bold"><!-- MKS HTML --><p>All Requirements passed</p></span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">DCR/TEST_Leads_Comments:</span></td><td><span class="bold">&nbsp;</span></td>
+</tr>
+</table>
+
+<table class="border" cellspacing=0>
+<tr valign=TOP>
+    <td><span class="bold">TEST_Execution Log:</span></td><td><span class="bold">/s/opr/accounts/cfs_test/test_logs/CS2.3.1.0</span></td>
+</tr>
+</table>
+
+</td></tr>
+<!-- Relationships info -->
+<!-- Display relationship heading -->
+<tr><td class="heading4">DCRs Submitted/Tested and Requirements Validated</td></tr>
+
+
+<tr class="even_row"><td class="border"><span class="bold_color_underline">Links to DCRs from Test,SR_Validates:</span></td></tr>
+<tr class="even_row">
+    <td class="border">
+        <div class="center">
+        <table class="list">
+        
+        <tr>
+            
+            <th>ID</th>
+            
+            <th>Type</th>
+            
+            <th>ReqID</th>
+            
+            <th>Text</th>
+            
+            <th>Build Test Method</th>
+            
+            <th>Build/SYS Test Result</th>
+            
+            <th>Build/SYS Test Comment</th>
+            
+            <th>DCR_Title</th>
+            
+            <th>State</th>
+            
+            <th>DCR_TEST_Outcome</th>
+            
+        </tr>
+        <!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2638</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1002</td>
+            
+            <td>For all CS commands, if the length contained in the message header is not equal to the expected length, CS shall reject the command and issue an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2640</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1003</td>
+            
+            <td>If CS accepts any command as valid, CS shall execute the command, increment the CS Valid Command Counter and issue an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2642</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS1004</td>
+            
+            <td>If CS rejects any command, CS shall abort the command execution, increment the CS Command Rejected Counter and issue an error event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2652</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS2003</td>
+            
+            <td>Upon receipt of a Disable Non-volatile Checksumming command, CS shall disable non-volatile checksumming</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2674</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3003</td>
+            
+            <td>Upon receipt of a Disable OS code segment command, CS shall Disable checksumming of the OS Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2688</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS3008</td>
+            
+            <td>Upon receipt of a Disable cFE code segment command, CS shall Disable checksumming of the cFE Code segment</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2702</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS4002</td>
+            
+            <td>Upon receipt of a Disable Application checksumming command, CS shall Disable checksumming of all Application Code segments.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2728</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS5002</td>
+            
+            <td>Upon receipt of a Disable Table Checksumming command, CS shall Disable checksumming of all Tables.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2742</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6000</td>
+            
+            <td>Checksum shall calculate CRCs for each Table-Defined User-Defined Memory and compare them against the corresponding &nbsp;baseline CRC if <BR> a)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming (as a whole) is Enabled <BR> b)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory checksumming is Enabled <BR> c)&#160;&#160;&#160;&#160;&#160;&#160; Checksumming of the Individual Memory segments is Enabled</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2744</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6000.1</td>
+            
+            <td>If the User-Defined Memory&#8217;s CRC is not equal to the corresponding &nbsp;baseline CRC, CS shall increment the User-Defined Memory CRC Miscompare Counter and send an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2746</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6000.2</td>
+            
+            <td>If the table-defined Memory is invalid, CS shall send an event message.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2748</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6001</td>
+            
+            <td>Upon receipt of a Enable User-Defined Memory Checksumming command, CS shall enable checksumming of all User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2750</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6002</td>
+            
+            <td>Upon receipt of a Disable User-Defined Memory Checksumming command, CS shall Disable checksumming of all User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2752</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6003</td>
+            
+            <td>Upon receipt of a Enable User-Defined Memory Item command, CS shall enable checksumming of the command-specified Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2754</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6004</td>
+            
+            <td>Upon receipt of a Disable User-Defined Memory Item command, CS shall Disable checksumming of the command-specified Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2756</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6005</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Recompute User-Defined Memory CRC command, CS shall recompute the baseline CRC for the command-specified User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2758</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6005.1</td>
+            
+            <td>Once the baseline CRC is computed, CS shall generate an event message containing the baseline CRC</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>4445</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6005.2</td>
+            
+            <td><!-- MKS HTML --><p>If CS is already processing a Recompute CRC command, CS shall reject the command</p></td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td><!-- MKS HTML --><p></p></td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2760</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6006</td>
+            
+            <td><!-- MKS HTML -->Upon receipt of a Report User-Defined Memory CRC command, CS shall send an event message containing the baseline CRC for the command-specified User-Defined Memory.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2762</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6007</td>
+            
+            <td>If the command-specified User-Defined Memory is invalid (for any of the User-Defined memory commands where the memory ID is a command argument), CS shall reject the command and send an event message</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2764</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS6008</td>
+            
+            <td>CS shall provide the ability to dump the baseline CRCs and status for all the User-Defined Memory via a dump-only table.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2766</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS7000</td>
+            
+            <td>The CS software shall limit the amount of bytes processed during each of its execution cycles to a maximum of &lt;PLATFORM_DEFINED&gt; bytes</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2768</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8000</td>
+            
+            <td>Upon receipt of a Enable Checksum command, CS shall start calculating CRCs and compare them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2770</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS8001</td>
+            
+            <td>Upon receipt of a Disable Checksum command, CS shall stop calculating &nbsp;CRCs and comparing them against the baseline CRCs.</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2778</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9000</td>
+            
+            <td><!-- MKS HTML -->CS shall generate a housekeeping message containing the following:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Overall CRC enable/disable status<br>d)&#160;&#160;&#160;&#160;&#160;&#160; Total Non-volatile Baseline CRC<br>e)&#160;&#160;&#160;&#160;&#160;&#160; OS code segment Baseline CRC<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE code segment Baseline CRC<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>i)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>j)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>k)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>l)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter<br>m)&#160;&#160;&#160;&#160;&#160; Last One Shot Address<br>n)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Size<br>o)&#160;&#160;&#160;&#160;&#160;&#160; Last One Shot Checksum<br>p)&#160;&#160;&#160;&#160;&#160;&#160; Checksum Pass Counter (number of passes thru all of the checksum areas)<br>q)&#160;&#160;&#160;&#160;&#160;&#160; Current Checksum Region (Non-volatile, OS code segment, cFE code segment etc)<br>r)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC enable/disable status<br>s)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC enable/disable status<br>t)&#160;&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC enable/disable status<br>u)&#160;&#160;&#160;&#160;&#160;&#160; Application CRC enable/disable status<br>v)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC enable/disable status<br>w)&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC enable/disable status</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+<!-- block ID=4459-->
+
+	
+        
+        <!-- Display relationship issue field headings -->
+        
+        
+        <!-- Display relationship issue field values -->
+        <tr>
+            
+            <td>2780</td>
+            
+            <td>SR_Requirement</td>
+            
+            <td>CS9001</td>
+            
+            <td><!-- MKS HTML -->Upon any Initialization of the CS Application (cFE Power On, cFE Processor Reset or CS Application Reset), &#160;CS shall initialize the following data to Zero:<br>a)&#160;&#160;&#160;&#160;&#160;&#160; Valid Ground Command Counter<br>b)&#160;&#160;&#160;&#160;&#160;&#160; Ground Command Rejected Counter<br>c)&#160;&#160;&#160;&#160;&#160;&#160; Non-volatile CRC Miscompare Counter<br>d)&#160;&#160;&#160;&#160;&#160;&#160; OS Code Segment CRC Miscompare Counter<br>e)&#160;&#160;&#160;&#160;&#160;&#160; cFE Code Segment CRC Miscompare Counter<br>f)&#160;&#160;&#160;&#160;&#160;&#160;&#160; Application CRC Miscompare Counter<br>g)&#160;&#160;&#160;&#160;&#160;&#160; Table CRC Miscompare Counter<br>h)&#160;&#160;&#160;&#160;&#160;&#160; User-Defined Memory CRC Miscompare Counter</td>
+            
+            <td>Demonstration</td>
+            
+            <td>Pass</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>REQ_Revision Approved</td>
+            
+            <td>&nbsp;</td>
+            
+        </tr>
+        <!-- blockend ID=4459-->
+
+        </table>
+        </div>
+    </td>
+</tr>
+
+<tr><td><hr class="hr_default"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<!-- blockend ID=4459-->
+
+</table>
+</body>
+</html>

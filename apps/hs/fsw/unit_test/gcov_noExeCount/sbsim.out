@@ -1,0 +1,974 @@
+UTF Info: Task <HS_APP> added to Task Tbl.
+SysLog:1980-001-00:00:00.00000 ES Startup: HS_APP loaded and created
+UTF Info: App <HS_APP> added to App Tbl.
+*************************
+* HS Init Failure Tests *
+*************************
+
+Test Init with EVS Reg Failure 
+------------------------------ 
+UTF Info: Return value for CFE EVS Api #0 set to ffffffff
+SysLog:1980-001-00:00:00.00000 HS App: Error Registering For Event Services, RC = 0xFFFFFFFF
+CRITICAL EVENT ID=2 Application Terminating, err = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE EVS Api #0 returned to default
+
+Test Init with Create CMD Pipe Failure 
+-------------------------------------- 
+ERROR EVENT ID=4 Error Creating SB Command Pipe,RC=0xFFFFFFFF
+CRITICAL EVENT ID=2 Application Terminating, err = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with Create EVENT Pipe Failure 
+---------------------------------------- 
+ERROR EVENT ID=5 Error Creating SB Event Pipe,RC=0xFFFFFFFF
+CRITICAL EVENT ID=2 Application Terminating, err = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with Create WAKEUP Pipe Failure 
+----------------------------------------- 
+ERROR EVENT ID=6 Error Creating SB Wakeup Pipe,RC=0xFFFFFFFF
+CRITICAL EVENT ID=2 Application Terminating, err = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xFFFFFFFF
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with HK Subscription Failure 
+-------------------------------------- 
+ERROR EVENT ID=8 Error Subscribing to HK Request,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with CMD Subscription Failure 
+--------------------------------------- 
+ERROR EVENT ID=9 Error Subscribing to Gnd Cmds,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with WAKEUP Subscription Failure 
+------------------------------------------ 
+ERROR EVENT ID=60 Error Subscribing to Wakeup,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task 0 is a cFE Main Task.
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with Event Subscription Failure 
+----------------------------------------- 
+UTF INFO: CFE_TBL_Register called for new table HS_APP.AppMon_Tbl.
+UTF INFO: CFE_TBL_Register called for new table HS_APP.EventMon_Tbl.
+UTF INFO: CFE_TBL_Register called for new table HS_APP.MsgActs_Tbl.
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with CDS Restoration Failure 
+(Fails out due to Event Subscription Failure) 
+-------------------------------------- 
+UTF Info: Return value for CFE ES Api #18 set to ffffffff
+ERROR EVENT ID=3 Failed to restore data from CDS (Err=0xffffffff), initializing resets data
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE ES Api #18 returned to default
+
+Test Init with CDS Corruption 
+(Fails out due to Event Subscription Failure) 
+----------------------------- 
+ERROR EVENT ID=18 Data in CDS was corrupt, initializing resets data
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with CDS Creation Failure 
+(Fails out due to Event Subscription Failure) 
+----------------------------------- 
+UTF Info: Return value for CFE ES Api #16 set to ffffffff
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE ES Api #16 returned to default
+
+Test Init with Child Task Creation Failure 
+(Fails out due to Event Subscription Failure) 
+----------------------------------- 
+UTF Info: Return value for CFE ES Api #5 set to ffffffff
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+ERROR EVENT ID=101 Error Creating Child Task for CPU Utilization Monitoring,RC=0xFFFFFFFF
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task ID is not active: 1
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE ES Api #5 returned to default
+
+Test Init with Sync Callback Failure 
+(Fails out due to Event Subscription Failure) 
+----------------------------------- 
+UTF Info: Return value for CFE TIME Api #1 set to ffffffff
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+ERROR EVENT ID=102 Error Registering Sync Callback for CPU Utilization Monitoring,RC=0xFFFFFFFF
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ERROR EVENT ID=7 Error Subscribing to Events,RC=0xCA000009
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCA000009
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCA000009
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE TIME Api #1 returned to default
+
+Test Init with Tbl Load Failures 
+(Fails out due to Event Subscription Failure) 
+-------------------------------- 
+UTF Info: Return value for CFE TBL Api #3 set to ffffffff
+ERROR EVENT ID=14 Error Loading AppMon Table,RC=0xFFFFFFFF
+ERROR EVENT ID=58 Critical Application Monitoring Disabled due to Table Load Failure
+ERROR EVENT ID=15 Error Loading EventMon Table,RC=0xFFFFFFFF
+ERROR EVENT ID=59 Critical Event Monitoring Disabled due to Table Load Failure
+ERROR EVENT ID=17 Error Loading MsgActs Table,RC=0xFFFFFFFF
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE TBL Api #3 returned to default
+
+Test Tbl GetAddress Failures 
+(Fails out due to Event Subscription Failure) 
+---------------------------- 
+UTF Info: Return value for CFE TBL Api #5 set to ffffffff
+UTF Info: Return value for CFE SB Api #3 set to ffffffd6
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+ERROR EVENT ID=33 Error getting AppMon Table address, RC=0xFFFFFFFF, Application Monitoring Disabled
+ERROR EVENT ID=34 Error getting EventMon Table address, RC=0xFFFFFFFF, Event Monitoring Disabled
+ERROR EVENT ID=68 Error Unsubscribing from Events,RC=0xFFFFFFD6
+ERROR EVENT ID=36 Error getting MsgActs Table address, RC=0xFFFFFFFF
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE TBL Api #3 returned to default
+UTF Info: Return code for CFE TBL Api #5 returned to default
+
+Test Init with AppMon Reg Failure 
+--------------------------------- 
+ERROR EVENT ID=10 Error Registering AppMon Table,RC=0xCC000003
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCC000003
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCC000003
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task ID is not active: 1
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with EventMon Reg Failure 
+----------------------------------- 
+ERROR EVENT ID=11 Error Registering EventMon Table,RC=0xCC000003
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCC000003
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCC000003
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task ID is not active: 1
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with MsgActs Reg Failure 
+---------------------------------- 
+ERROR EVENT ID=13 Error Registering MsgActs Table,RC=0xCC000003
+CRITICAL EVENT ID=2 Application Terminating, err = 0xCC000003
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xCC000003
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Error: Task ID is not active: 1
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test Init with ExeCount Reg Failure 
+----------------------------------- 
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+
+Test HS_AppMain with SB Failure 
+------------------------------- 
+UTF Info: Return value for CFE SB Api #5 set to ffffffd6
+UTF Info: Overwriting ES Task Table Record[0]
+SysLog:1980-001-00:00:00.00000 ES Startup: HS_APP loaded and created
+UTF Info: App <HS_APP> added to App Tbl.
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+CRITICAL EVENT ID=2 Application Terminating, err = 0xFFFFFFD6
+SysLog:1980-001-00:00:00.00000 HS App: Application Terminating, ERR = 0xFFFFFFD6
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteChildTask Task 1 Deleted
+SysLog:1980-001-00:00:00.00000 Application HS_APP called CFE_ES_ExitApp
+UTF Info: Return code for CFE SB Api #5 returned to default
+
+Test HS_AppMain with No Failures 
+-------------------------------- 
+UTF Info: Overwriting ES Task Table Record[0]
+SysLog:1980-001-00:00:00.00000 ES Startup: HS_APP loaded and created
+UTF Info: App <HS_APP> added to App Tbl.
+UTF Info: Task <TASK_1> added to Task Tbl.
+SysLog:1980-001-00:00:00.00000 ES Startup: TASK_1 loaded and created
+UTF Info: App <TASK_1> added to App Tbl.
+UTF Info: Task <TASK_2> added to Task Tbl.
+SysLog:1980-001-00:00:00.00000 ES Startup: TASK_2 loaded and created
+UTF Info: App <TASK_2> added to App Tbl.
+UTF Info: Task <TASK_3> added to Task Tbl.
+SysLog:1980-001-00:00:00.00000 ES Startup: TASK_3 loaded and created
+UTF Info: App <TASK_3> added to App Tbl.
+UTF Info: Task <TASK_4> added to Task Tbl.
+SysLog:1980-001-00:00:00.00000 ES Startup: TASK_4 loaded and created
+UTF Info: App <TASK_4> added to App Tbl.
+UTF Info: Task <CTSK_1> added to Task Tbl.
+UTF Info: Task <CTSK_2> added to Task Tbl.
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=50 AppMon verify results: good = 8, bad = 0, unused = 24
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.AppMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.AppMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=52 EventMon verify results: good = 8, bad = 0, unused = 8
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.EventMon_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.EventMon_Tbl'
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+INFO EVENT ID=56 MsgActs verify results: good = 2, bad = 0, unused = 6
+INFO EVENT ID=36 HS_APP validation successful for Inactive 'HS_APP.MsgActs_Tbl'
+INFO EVENT ID=37 HS_APP Successfully Updated 'HS_APP.MsgActs_Tbl'
+UTF Info: Task <HS_IDLE_TASK> added to Task Tbl.
+INFO EVENT ID=1 HS Initialized.  Version 0.0.0.0
+ ********************
+ * HS Runtime Tests *
+ ********************
+
+ ================== WAKEUP 01 ==================
+ == TASK_5 AppMon Unresolvable                ==
+ == TASK_2 AppMon Failure, MsgActs(1) NoEvent ==
+ == HK Request                                ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=38 App Monitor App Name not found: APP:(TASK_5)
+> CMD: APID:0195 SEQ:2 LEN:14 FC:19 PKT:1995 c002 0007 1337 0dd0 1500 4dd3 
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0000 0101 0101 001e 0000 0003 0000 0000 0003 0000 00bf 0000 0001 0000 09c4 0000 2710 0000 
+
+ ================== WAKEUP 02 ==================
+ == TASK_2 AppMon Restart App                 ==
+ == TASK_5 AppMon Restart App, Unresolvable   ==
+ == TASK_3 EventMon Processor Reset           ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=39 Critical App Monitor Failure: APP:(TASK_2) Action: Restart Application
+SysLog:1980-001-00:00:00.00000 CFE_ES_RestartApp: Restart Application TASK_2 Initiated
+ERROR EVENT ID=39 Critical App Monitor Failure: APP:(TASK_5) Action: Restart Application
+ERROR EVENT ID=40 Call to Restart App Failed: APP:(TASK_5) ERR: 0xC4000002
+
+ Event: Task_3 EID:10 Action: Proc Reset
+ ---------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 335f 0000 0000 0000 0000 0000 0000 0000 000a 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=45 Critical Event: APP:(TASK_3) EID:(10): Action: Processor Reset
+SysLog:1980-001-00:00:00.00000 HS App: Critical Event: APP:(TASK_3) EID:(10): Action: Processor Reset
+SysLog:1980-001-00:00:00.00000 ES ResetCFE: CFE ES Processor Reset called.
+
+ ================== WAKEUP 03 ==================
+ == TASK_3 AppMon Processor Reset             ==
+ == TASK_3 AppMon MsgActs(0) Event            ==
+ == HK Request                                ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=42 Critical App Monitor Failure: APP:(TASK_3): Action: Processor Reset
+SysLog:1980-001-00:00:00.00000 HS App: Critical App Monitor Failure: APP:(TASK_3): Action: Processor Reset
+SysLog:1980-001-00:00:00.00000 ES ResetCFE: CFE ES Processor Reset called.
+> CMD: APID:0194 SEQ:1 LEN:16 FC:19 PKT:1994 c001 0009 1337 d00d 3475 d34d feef 
+ERROR EVENT ID=43 Critical App Monitor Failure: APP:(TASK_3): Action: Message Action Index: 0
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0000 0101 0101 001e 0002 0003 0001 0000 0003 0000 0089 0000 0002 0000 1388 0000 2710 0000 
+
+ ================== WAKEUP 04 ==================
+ == TASK_4 AppMon MsgActs(0) On Cooldown      ==
+ == Command and Command Error Testing         ==
+ == AppMon, EventMon and Aliveness disabled   ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+ NOOP
+ ----
+< CMD: APID:00ae SEQ:0 LEN:8 FC:0 PKT:18ae c000 0001 0000 
+INFO EVENT ID=23 No-op command: Version 0.0.0.0
+
+ NOOP (Bad Length)
+ -----------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:0 PKT:18ae c000 0003 0000 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 0, Len = 10, Expected = 8
+
+ Reset (Bad Length)
+ ------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:1 PKT:18ae c000 0003 0100 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 1, Len = 10, Expected = 8
+
+ Command (Bad CC)
+ ----------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:66 PKT:18ae c000 0003 4200 0000 
+ERROR EVENT ID=19 Invalid command code: ID = 0x18AE, CC = 66
+
+ Command (Bad MID)
+ -----------------
+< CMD: APID:0055 SEQ:0 LEN:10 FC:1 PKT:1855 c000 0003 0100 0000 
+ERROR EVENT ID=20 Invalid command pipe message ID: 0x1855
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0401 0101 0101 001e 0002 0003 0001 0000 0003 0000 0081 0000 0002 0000 1d4c 0000 2710 0000 
+
+ Reset
+ -----
+< CMD: APID:00ae SEQ:0 LEN:8 FC:1 PKT:18ae c000 0001 0100 
+DEBUG EVENT ID=24 Reset counters command
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0000 0101 0101 001e 0002 0003 0000 0000 0003 0000 0081 0000 0000 0000 1d4c 0000 2710 0000 
+
+ Disable AppMon
+ --------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:3 PKT:18ae c000 0001 0300 
+DEBUG EVENT ID=26 Critical Application Monitoring Disabled
+
+ Disable EventMon (Bad UnSub)
+ ----------------------------
+UTF Info: Return value for CFE SB Api #1 set to ffffffd6
+UTF Info: Return value for CFE SB Api #3 set to ffffffd6
+< CMD: APID:00ae SEQ:0 LEN:8 FC:5 PKT:18ae c000 0001 0500 
+ERROR EVENT ID=67 Event Monitor Disable: Error Unsubscribing from Events,RC=0xFFFFFFD6
+UTF Info: Return code for CFE SB Api #1 returned to default
+UTF Info: Return code for CFE SB Api #3 returned to default
+
+ Disable EventMon
+ ----------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:5 PKT:18ae c000 0001 0500 
+DEBUG EVENT ID=28 Critical Event Monitoring Disabled
+
+ Enable EventMon (Bad Sub)
+ -------------------------
+UTF Info: Return value for CFE SB Api #1 set to ffffffd6
+UTF Info: Return value for CFE SB Api #3 set to ffffffd6
+< CMD: APID:00ae SEQ:0 LEN:8 FC:4 PKT:18ae c000 0001 0400 
+ERROR EVENT ID=66 Event Monitor Enable: Error Subscribing to Events,RC=0xFFFFFFD6
+UTF Info: Return code for CFE SB Api #1 returned to default
+UTF Info: Return code for CFE SB Api #3 returned to default
+
+ Disable Aliveness
+ -----------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:7 PKT:18ae c000 0001 0700 
+DEBUG EVENT ID=30 Aliveness Indicator Disabled
+ 
+ Disable CPU Hogging
+ -------------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:11 PKT:18ae c000 0001 0b00 
+DEBUG EVENT ID=65 CPU Hogging Indicator Disabled
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0204 0000 0000 001e 0002 0003 0000 0000 0003 0000 0081 0000 0000 0000 1d4c 0000 2710 0000 
+
+ ================== WAKEUP 05 ==================
+ == TASK_3 EventMon Processor Reset Ignored   ==
+ == More Command and Command Error Testing    ==
+ == Appmon, EventMon and Aliveness enabled    ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+ Enable AppMon
+ -------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:2 PKT:18ae c000 0001 0200 
+DEBUG EVENT ID=25 Critical Application Monitoring Enabled
+
+ Enable EventMon
+ ---------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:4 PKT:18ae c000 0001 0400 
+DEBUG EVENT ID=27 Critical Event Monitoring Enabled
+
+ Enable Aliveness
+ ----------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:6 PKT:18ae c000 0001 0600 
+DEBUG EVENT ID=29 Aliveness Indicator Enabled
+
+ Enable CPU Hogging
+ ------------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:10 PKT:18ae c000 0001 0a00 
+DEBUG EVENT ID=64 CPU Hogging Indicator Enabled
+
+ Reset Resets
+ ------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:8 PKT:18ae c000 0001 0800 
+DEBUG EVENT ID=31 Processor Resets Performed by HS Counter has been Reset
+
+ Set Max Resets
+ --------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:9 PKT:18ae c000 0003 0900 0000 
+DEBUG EVENT ID=32 Max Resets Performable by HS has been set to 0
+ 
+ Report Util Diagnostics
+ -----------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:12 PKT:18ae c000 0003 0c00 0000 
+INFO EVENT ID=103 Mask 0xFFFFFFFF Base Time Ticks per Idle Ticks (frequency): 0(13), 20(1), 100(1), -120(1)
+ 
+ Set Util Params
+ ---------------
+< CMD: APID:00ae SEQ:0 LEN:20 FC:13 PKT:18ae c000 000d 0d00 0000 0002 0000 0001 0000 0002 
+DEBUG EVENT ID=104 Utilization Parms set: Mult1: 131072 Div: 65536 Mult2: 131072
+ 
+ Set Util Params (bad param)
+ ---------------------------
+< CMD: APID:00ae SEQ:0 LEN:20 FC:13 PKT:18ae c000 000d 0d00 0000 0000 0000 0001 0000 0002 
+ERROR EVENT ID=105 Utilization Parms Error: No parameter may be 0: Mult1: 0 Div: 65536 Mult2: 131072
+ 
+ Set Util Diagnostic
+ -------------------
+< CMD: APID:00ae SEQ:0 LEN:12 FC:14 PKT:18ae c000 0005 0e00 ffff ffff 
+DEBUG EVENT ID=106 Utilization Diagnostics Mask has been set to FFFFFFFF
+
+ Disable AppMon (BadLen)
+ -----------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:3 PKT:18ae c000 0003 0300 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 3, Len = 10, Expected = 8
+
+ Enable AppMon (BadLen)
+ ----------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:2 PKT:18ae c000 0003 0200 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 2, Len = 10, Expected = 8
+
+ Disable EventMon (BadLen)
+ -------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:5 PKT:18ae c000 0003 0500 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 5, Len = 10, Expected = 8
+
+ Enable EventMon (BadLen)
+ ------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:4 PKT:18ae c000 0003 0400 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 4, Len = 10, Expected = 8
+
+ Disable Aliveness (BadLen)
+ --------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:7 PKT:18ae c000 0003 0700 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 7, Len = 10, Expected = 8
+
+ Enable Aliveness (BadLen)
+ -------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:6 PKT:18ae c000 0003 0600 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 6, Len = 10, Expected = 8
+ 
+ Disable CPU Hogging (BadLen)
+ ----------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:11 PKT:18ae c000 0003 0b00 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 11, Len = 10, Expected = 8
+ 
+ Enable CPU Hogging (BadLen)
+ ----------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:10 PKT:18ae c000 0003 0a00 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 10, Len = 10, Expected = 8
+
+ Reset Resets (BadLen)
+ ---------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:8 PKT:18ae c000 0003 0800 0000 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 8, Len = 10, Expected = 8
+
+ Set Max Resets (BadLen)
+ -----------------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:9 PKT:18ae c000 0001 0900 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 9, Len = 8, Expected = 10
+ 
+ Report Util Diagnostics (BadLen)
+ --------------------------------
+< CMD: APID:00ae SEQ:0 LEN:10 FC:12 PKT:18ae c000 0003 0c00 0000 
+INFO EVENT ID=103 Mask 0xFFFFFFFF Base Time Ticks per Idle Ticks (frequency): 0(13), 20(1), 100(1), -120(1)
+ 
+ Set Util Params (BadLen)
+ ------------------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:13 PKT:18ae c000 0001 0d00 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 13, Len = 8, Expected = 20
+ 
+ Set Util Diagnostic (BadLen)
+ ----------------------------
+< CMD: APID:00ae SEQ:0 LEN:8 FC:14 PKT:18ae c000 0001 0e00 
+ERROR EVENT ID=22 Invalid msg length: ID = 0x18AE, CC = 14, Len = 8, Expected = 12
+
+ Housekeeping Request (BadLen)
+ -----------------------------
+< CMD: APID:00af SEQ:0 LEN:10 FC:0 PKT:18af c000 0003 0000 0000 
+ERROR EVENT ID=21 Invalid HK request msg length: ID = 0x18AF, CC = 0, Len = 10, Expected = 8
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0f0c 0101 0101 001e 0000 0000 0000 0000 0003 0000 00ff 0000 0000 0000 1d4c 0000 2710 0000 
+
+
+ ================== WAKEUP 06 ==================
+ == TASK_5 AppMon Unresolvable                ==
+ == TASK_2 AppMon Failure, MsgActs(1) NoEvent ==
+ == Aliveness Indicator                       ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=38 App Monitor App Name not found: APP:(TASK_5)
+> CMD: APID:0195 SEQ:2 LEN:14 FC:19 PKT:1995 c002 0007 1337 0dd0 1500 4dd3 
+.
+ Event: Task_3 EID:10 Action: Proc Reset
+ ---------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 335f 0000 0000 0000 0000 0000 0000 0000 000a 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=45 Critical Event: APP:(TASK_3) EID:(10): Action: Processor Reset
+ERROR EVENT ID=37 Processor Reset Action Limit Reached: No Reset Performed
+
+ ================== WAKEUP 07 ==================
+ == TASK_2 AppMon Restart App                 ==
+ == TASK_5 AppMon Restart App, Unresolvable   ==
+ == TASK_1 EventMon Nothing                   ==
+ == TASK_1 EventMon MsgActs(1) NoEvent        ==
+ == TASK_2 EventMon Restart App               ==
+ == TASK_3 EventMon Processor Reset, Limited  ==
+ == TASK_4 EventMon Delete App                ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=39 Critical App Monitor Failure: APP:(TASK_2) Action: Restart Application
+SysLog:1980-001-00:00:00.00000 CFE_ES_RestartApp: Restart Application TASK_2 Initiated
+ERROR EVENT ID=39 Critical App Monitor Failure: APP:(TASK_5) Action: Restart Application
+ERROR EVENT ID=40 Call to Restart App Failed: APP:(TASK_5) ERR: 0xC4000002
+
+ ================== WAKEUP 08 ==================
+ == TASK_3 AppMon Processor Reset, Limited    ==
+ == TASK_3 AppMon MsgActs(0) Event            ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=42 Critical App Monitor Failure: APP:(TASK_3): Action: Processor Reset
+ERROR EVENT ID=37 Processor Reset Action Limit Reached: No Reset Performed
+> CMD: APID:0194 SEQ:1 LEN:16 FC:19 PKT:1994 c001 0009 1337 d00d 3475 d34d feef 
+ERROR EVENT ID=43 Critical App Monitor Failure: APP:(TASK_3): Action: Message Action Index: 0
+
+ Event: Task_1 EID:01 Not Monitored
+ ----------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 315f 0000 0000 0000 0000 0000 0000 0000 0001 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+
+ Event: Task_1 EID:20 Action: MsgActs(1) NoEvent
+ -----------------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 315f 0000 0000 0000 0000 0000 0000 0000 0014 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+> CMD: APID:0195 SEQ:2 LEN:14 FC:19 PKT:1995 c002 0007 1337 0dd0 1500 4dd3 
+
+ Event: Task_2 EID:05 Action: App Restart
+ ----------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 325f 0000 0000 0000 0000 0000 0000 0000 0005 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=46 Critical Event: APP:(TASK_2) EID:(5): Action: Restart Application
+SysLog:1980-001-00:00:00.00000 CFE_ES_RestartApp: Restart Application TASK_2 Initiated
+
+ Event: Task_3 EID:10 Action: Proc Reset
+ ---------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 335f 0000 0000 0000 0000 0000 0000 0000 000a 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=45 Critical Event: APP:(TASK_3) EID:(10): Action: Processor Reset
+ERROR EVENT ID=37 Processor Reset Action Limit Reached: No Reset Performed
+
+ Event: Task_4 EID:10 Action: App Delete
+ ---------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 345f 0000 0000 0000 0000 0000 0000 0000 000a 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=48 Critical Event: APP:(TASK_4) EID:(10): Action: Delete Application
+SysLog:1980-001-00:00:00.00000 CFE_ES_DeleteApp: Delete Application TASK_4 Initiated
+
+ ================== WAKEUP 09 ==================
+ == TASK_4 AppMon MsgActs(0) On Cooldown      ==
+ == HK Request                                ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+ Housekeeping Request
+ --------------------
+< CMD: APID:00af SEQ:0 LEN:8 FC:0 PKT:18af c000 0001 0000 
+> TLM: APID:00ad SEQ:0 LEN:48 TIME:00000000 00000000 PKT:08ad c000 0029 0000 0000 0000 0f0c 0101 0101 001e 0000 0000 0006 0000 0004 0000 0081 0000 0003 0000 2710 0000 2710 0000 
+
+ ================== WAKEUP 10 ==================
+ == TASK_1 AppMon Event Only                  ==
+ == CPU Hogging Detected                      ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=41 Critical App Monitor Failure: APP:(TASK_1): Action: Event Only
+ERROR EVENT ID=61 CPU Hogging Detected
+SysLog:1980-001-00:00:00.00000 HS App: CPU Hogging Detected
+
+ ================== WAKEUP 11 ==================
+ == Aliveness Indicator                       ==
+ == TASK_1 EventMon MsgActs(0) Event          ==
+ == TASK_1 EventMon MsgActs(0) On Cooldown    ==
+ == TASK_5 EventMon Delete App Unresolvable   ==
+ == TASK_5 EventMon Restart App Unresolvable  ==
+ == Load Bad Tables                           ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+ Load Bad Tables (Validate Validation Functions)
+ -----------------------------------------------
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+Call to CFE_TBL_LoadWorkingBuffer returns 0
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+Call to CFE_TBL_LoadWorkingBuffer returns 0
+Call to CFE_TBL_ValidateAccess returned 0
+Call to CFE_TBL_LoadFromFile returned 0
+Call to CFE_TBL_LoadWorkingBuffer returns 0
+
+ ================== WAKEUP 12 ==================
+ == Bad Tables are Validated and Fail         ==
+ ===============================================
+
+ WAKE-UP
+ -------
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+ERROR EVENT ID=51 AppMon verify err: Entry = 0, Err = -2, Action = 3, App = CFE_ES
+INFO EVENT ID=50 AppMon verify results: good = 2, bad = 2, unused = 28
+ERROR EVENT ID=96 HS_APP validation failed for Inactive 'HS_APP.AppMon_Tbl', Status=0xFFFFFFFE
+ERROR EVENT ID=53 EventMon verify err: Entry = 0, Err = -2, Action = 4, ID = 2 App = TASK_1
+INFO EVENT ID=52 EventMon verify results: good = 3, bad = 2, unused = 11
+ERROR EVENT ID=96 HS_APP validation failed for Inactive 'HS_APP.EventMon_Tbl', Status=0xFFFFFFFE
+ERROR EVENT ID=57 MsgActs verify err: Entry = 0, Err = -3, Length = 2311, ID = 6548
+INFO EVENT ID=56 MsgActs verify results: good = 0, bad = 3, unused = 5
+ERROR EVENT ID=96 HS_APP validation failed for Inactive 'HS_APP.MsgActs_Tbl', Status=0xFFFFFFFD
+
+ Event: Task_1 EID:20 Action: MsgActs(1) NoEvent
+ -----------------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 315f 0000 0000 0000 0000 0000 0000 0000 0002 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+> CMD: APID:0194 SEQ:1 LEN:16 FC:19 PKT:1994 c001 0009 1337 d00d 3475 d34d feef 
+ERROR EVENT ID=44 Critical Event: APP:(TASK_1) EID:(2): Action: Message Action Index: 0
+
+ Event: Task_1 EID:20 Action: MsgActs(1) On Cooldown
+ ---------------------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 315f 0000 0000 0000 0000 0000 0000 0000 0002 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+
+ Event: Task_5 EID:07 Action: App Delete Failure
+ -----------------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 355f 0000 0000 0000 0000 0000 0000 0000 0007 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=49 Call to Delete App Failed: APP:(TASK_5) ERR: 0xC4000002
+
+ Event: Task_5 EID:06 Action: App Restart Failure
+ ------------------------------------------------
+< TLM: APID:0001 SEQ:0 LEN:150 TIME:00000000 00000000 PKT:0801 c000 008f 0000 0000 0000 4154 4b53 355f 0000 0000 0000 0000 0000 0000 0000 0006 0001 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
+ERROR EVENT ID=47 Call to Restart App Failed: APP:(TASK_5) ERR: 0xC4000002
+
+ ================== WAKEUP 72 ==================
+ == Internal Array Rollover (at 65)           ==
+ ===============================================
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+.
+< CMD: APID:00b0 SEQ:0 LEN:8 FC:0 PKT:18b0 c000 0001 0000 
+
+
+ ***********************
+ * HS Testing Complete *
+ ***********************
