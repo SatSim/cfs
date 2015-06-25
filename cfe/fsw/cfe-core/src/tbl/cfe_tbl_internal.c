@@ -1031,7 +1031,6 @@ int32 CFE_TBL_LoadFromFile(CFE_TBL_LoadBuff_t *WorkingBufferPtr,
 
             if (Status == CFE_SUCCESS)
             {
-                //CFE_ES_WriteToSysLog("RegRecPtr->Name = %s, TblFileHeader.TableName = %s\n", RegRecPtr->Name, TblFileHeader.TableName);
                 /* Verify that the specified file has compatible data for specified table */
                 if (strcmp(RegRecPtr->Name, TblFileHeader.TableName) == 0)
                 {

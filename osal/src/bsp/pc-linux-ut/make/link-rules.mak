@@ -5,14 +5,23 @@
 #   Makefile for linking code and producing an executable image.
 #
 # History:
-#
+#   6/24/15 Added Xenomai flags - Bryan Anderson
+# 
+# 
 ###############################################################################
 
 
 ##
+## Xenomai
+##
+XENO_DESTDIR:=/home/bryan/build_xen/tmprootfs
+XENO_CONFIG:=$(XENO_DESTDIR)/usr/xenomai/bin/xeno-config
+XENO_POSIX_LIBS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin=posix --ldflags)
+
+##
 ## Linker flags that are needed
 ##
-LDFLAGS = -pg -fprofile-arcs -ftest-coverage -fPIC -lrt
+LDFLAGS = -pg -fprofile-arcs -ftest-coverage -fPIC -lrt $(XENO_POSIX_LIBS)
 
 ##
 ## Libraries to link in

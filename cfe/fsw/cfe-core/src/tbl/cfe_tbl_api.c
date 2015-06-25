@@ -862,9 +862,7 @@ int32 CFE_TBL_Load( CFE_TBL_Handle_t TblHandle,
                     /* If the data was successfully loaded, then validate its contents */
                     if ((Status >= CFE_SUCCESS) && (RegRecPtr->ValidationFuncPtr != NULL))
                     {
-                        //CFE_ES_WriteToSysLog("RegRecPtr->ValidationFuncPtr = 0x%08X WorkingBufferPtr->BufferPtr = 0x%08X\n", RegRecPtr->ValidationFuncPtr, WorkingBufferPtr->BufferPtr);
                         Status = (RegRecPtr->ValidationFuncPtr)(WorkingBufferPtr->BufferPtr);
-                        //CFE_ES_WriteToSysLog("Status = 0x%08X\n", Status);
 
                         if (Status > CFE_SUCCESS)
                         {
@@ -877,8 +875,6 @@ int32 CFE_TBL_Load( CFE_TBL_Handle_t TblHandle,
                         {
                             CFE_ES_WriteToSysLog("CFE_TBL:Load-App(%d) reports load invalid (Stat=0x%08X) for '%s'\n",
                                                  ThisAppId, Status, RegRecPtr->Name);
-
-                            //CFE_ES_WriteToSysLog("Status = 0x%08X\n", Status);
                                             
                             /* Zero out the buffer to remove any bad data */
                             CFE_PSP_MemSet(WorkingBufferPtr->BufferPtr, 0, RegRecPtr->Size);     

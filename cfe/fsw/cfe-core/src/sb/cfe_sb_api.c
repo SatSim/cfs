@@ -1,5 +1,3 @@
-#include "stdio.h"
-
 /******************************************************************************
 ** File: cfe_sb_api.c
 **
@@ -219,7 +217,6 @@ int32  CFE_SB_CreatePipe(CFE_SB_PipeId_t *PipeIdPtr, uint16  Depth, char *PipeNa
         CFE_EVS_SendEventWithAppID(CFE_SB_CR_PIPE_ERR_EID,CFE_EVS_ERROR,CFE_SB.AppId,
                 "CreatePipeErr:OS_QueueCreate returned %d,app %s",
                 Status,CFE_SB_GetAppTskName(TskId,FullName));
-        printf("%x\n", Status);
         return CFE_SB_PIPE_CR_ERR;
     }/* end if */
 

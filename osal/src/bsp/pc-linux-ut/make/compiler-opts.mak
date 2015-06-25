@@ -6,6 +6,14 @@
 ## Modifications:
 ##
 ###############################################################################
+
+##
+## Xenomai Flags
+##
+XENO_DESTDIR:=/home/bryan/build_xen/tmprootfs
+XENO_CONFIG:=$(XENO_DESTDIR)/usr/xenomai/bin/xeno-config
+XENO_POSIX_CFLAGS:=$(shell DESTDIR=$(XENO_DESTDIR) $(XENO_CONFIG) --skin=posix --cflags)
+
 ## 
 ## Warning Level Configuration
 ##
@@ -57,7 +65,7 @@ COPTS_D = $(APP_COPTS) $(ENDIAN_DEFS) $(TARGET_DEFS) $(ARCH_OPTS) $(SYSINCS) $(W
 ## 
 ## General gcc options that apply to compiling and dependency generation.
 ##
-COPTS=$(LIST_OPTS) $(COPTS_D)
+COPTS=$(LIST_OPTS) $(COPTS_D) $(XENO_POSIX_CFLAGS)
 
 ##
 ## Extra defines and switches for assembly code

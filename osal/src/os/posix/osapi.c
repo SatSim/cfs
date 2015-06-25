@@ -148,7 +148,7 @@
    #define PTHREAD_STACK_MIN 8092
 #endif
 
-#define OS_DEBUG_PRINTF 
+#undef OS_DEBUG_PRINTF 
 
 /*
 ** Global data for the API
