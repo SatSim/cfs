@@ -31,4 +31,4 @@ OS = posix
 ## BSP = mcf5235-rtems       -- RTEMS Coldfire evaluation board
 ## BSP = sis-rtems           -- RTEMS Sparc Instruction Simulator (GDB)
 ##---------------------------------------------------------
-BSP = pc-linux-ut
+BSP = pc-xenomai

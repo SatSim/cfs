@@ -43,7 +43,7 @@ THE_APPS :=
 #THE_APPS += sample_lib sample_app
 #THE_APPS += ci_lab to_lab sch_lab
 THE_APPS += cfs_lib
-THE_APPS += cf cs ds fm hk hs lc md mm sc sch
+THE_APPS += cf cs ds fm hk hs lc md mm sc sch sa
 export THE_APPS
 
 # List of apps that include tables for the build
