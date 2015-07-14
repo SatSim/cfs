@@ -11,7 +11,7 @@ CFE_APP, /cf/apps/lc.so, LC_AppMain, LC, 56, 8192, 0x0, 0;
 CFE_APP, /cf/apps/md.so, MD_AppMain, MD, 57, 8192, 0x0, 0;
 CFE_APP, /cf/apps/mm.so, MM_AppMain, MM, 58, 8192, 0x0, 0;
 CFE_APP, /cf/apps/sc.so, SC_AppMain, SC, 59, 8192, 0x0, 0;
-CFE_APP, /cf/apps/sch_lab.so, SCH_Lab_AppMain, SCH_LAB, 60, 8192, 0x0, 0;
+CFE_APP, /cf/apps/sch.so, SCH_AppMain, SCH, 60, 8192, 0x0, 0;
 CFE_APP, /cf/apps/sa.so, SA_AppMain, SA, 61, 8192, 0x0, 0;
 
 !
