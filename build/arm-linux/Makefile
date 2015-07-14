@@ -40,17 +40,19 @@
 
 # List of apps/libs to include in the build
 THE_APPS :=
-#THE_APPS += sample_lib sample_app
-#THE_APPS += ci_lab to_lab sch_lab
-THE_APPS += cfs_lib
-THE_APPS += cf cs ds fm hk hs lc md mm sc sch sa
+#THE_APPS += sample_lib sample_app sch_lab # Sample apps we don't need (NASA)
+THE_APPS += ci_lab to_lab sch_lab # Command and telemetry transmission, lab implementation (NASA)
+THE_APPS += cfs_lib # CFS library (NASA)
+THE_APPS += cf cs ds fm hk hs lc md mm sc #sch # CFS apps, working (NASA)
+#THE_APPS += sbn # CFS apps, not working (NASA)
+#THE_APPS += sa # Mission apps
 export THE_APPS
 
 # List of apps that include tables for the build
 THE_TBLS :=
-THE_TBLS += ds fm hk lc sc sch
-THE_TBLS += hs
-#THE_TBLS += cf
+THE_TBLS += ds fm hk lc sc sch hs # CFS tables, working (NASA)
+#THE_TBLS += cf # CFS tables that need to be built separately (NASA)
+THE_TBLS += # Mission tables
 export THE_TBLS
 
 #===============================================================================

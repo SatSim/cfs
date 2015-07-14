@@ -89,7 +89,7 @@ static void TO_AddPkt(TO_ADD_PKT_t * cmd);
 static void TO_RemovePkt(TO_REMOVE_PKT_t * cmd);
 static void TO_RemoveAllPkt(void);
 static void TO_forward_telemetry(void);
-static void TO_StartSending( TO_OUTPUT_ENABLE_PKT_t * pCmd );
+static void TO_StartSending();
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                                   */
@@ -216,6 +216,9 @@ void TO_init(void)
                 TO_LAB_REVISION, 
                 TO_LAB_MISSION_REV);
     
+    TO_StartSending();
+    downlink_on = TRUE;
+
 } /* End of TO_Init() */
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -223,9 +226,9 @@ void TO_init(void)
 /* TO_StartSending() -- TLM output enabled                         */
 /*                                                                 */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-void TO_StartSending( TO_OUTPUT_ENABLE_PKT_t * pCmd )
+void TO_StartSending()
 {
-    strncpy(tlm_dest_IP, pCmd->dest_IP,  sizeof(tlm_dest_IP));
+    strncpy(tlm_dest_IP, "192.168.33.1",  sizeof(tlm_dest_IP));
     suppress_sendto = FALSE;
     CFE_EVS_SendEvent(TO_TLMOUTENA_INF_EID,CFE_EVS_INFORMATION,"TO telemetry output enabled for IP %s", tlm_dest_IP);
 
@@ -315,7 +318,7 @@ void TO_exec_local_command(CFE_SB_MsgPtr_t cmd)
             break;
 
        case TO_OUTPUT_ENABLE_CC:
-            TO_StartSending( (TO_OUTPUT_ENABLE_PKT_t *)cmd );
+            TO_StartSending();
             downlink_on = TRUE;
             break;
 
@@ -515,6 +518,8 @@ void TO_forward_telemetry(void)
     do
     {
        CFE_SB_status = CFE_SB_RcvMsg(&PktPtr, TO_Tlm_pipe, CFE_SB_POLL);
+
+       OS_printf("TO_forward_telemetry()");
 
        if ( (CFE_SB_status == CFE_SUCCESS) && (suppress_sendto == FALSE) )
        {

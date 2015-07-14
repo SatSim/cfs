@@ -255,6 +255,7 @@ cfs_copy_installs::
 	@echo " >> Copy Files <<"
 	-cp -f $(CFS_EXE)/*.$(CFS_APP_EXE_TYPE) $(CFS_PROM_APPS)
 	-cp -f $(CFS_EXE)/*.tbl $(CFS_PROM_APPS)
+	-cp -f $(CFS_MISSION)/cftbls/cf_cfgtable.tbl $(CFS_EXE)/cf
 	@echo ""
 	@if test -f $(CFS_EXE)/run; then \
             echo "cp -f $(CFS_EXE)/run $(CFS_PROM_APPS)"; \
