@@ -41,9 +41,9 @@
 # List of apps/libs to include in the build
 THE_APPS :=
 #THE_APPS += sample_lib sample_app sch_lab # Sample apps we don't need (NASA)
-THE_APPS += ci_lab to_lab # Command and telemetry transmission, lab implementation (NASA)
+THE_APPS += ci_lab to_lab sch_lab # Command and telemetry transmission, lab implementation (NASA)
 THE_APPS += cfs_lib # CFS library (NASA)
-THE_APPS += cf cs ds fm hk hs lc md mm sc sch # CFS apps, working (NASA)
+THE_APPS += cf cs ds fm hk hs lc md mm sc #sch # CFS apps, working (NASA)
 #THE_APPS += sbn # CFS apps, not working (NASA)
 #THE_APPS += sa # Mission apps
 export THE_APPS

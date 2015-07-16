@@ -44,11 +44,16 @@ static TO_subsciption_t  TO_SubTable[] =
 
 #if 1
             /* Add these if needed */
-            {HS_HK_TLM_MID,         {0,0},  4},
-            {FM_HK_TLM_MID,         {0,0},  4},
-            {SC_HK_TLM_MID,         {0,0},  4},
+            {CF_HK_TLM_MID,         {0,0},  4},
+            {CS_HK_TLM_MID,         {0,0},  4},
             {DS_HK_TLM_MID,         {0,0},  4},
+            {FM_HK_TLM_MID,         {0,0},  4},
+            {HK_HK_TLM_MID,         {0,0},  4},
+            {HS_HK_TLM_MID,         {0,0},  4},
             {LC_HK_TLM_MID,         {0,0},  4},
+            {MD_HK_TLM_MID,         {0,0},  4},
+            {MM_HK_TLM_MID,         {0,0},  4},
+            {SC_HK_TLM_MID,         {0,0},  4},
 #endif
             /* cFE Core subsciptions */
             {CFE_ES_HK_TLM_MID,     {0,0},  4},

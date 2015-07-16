@@ -519,8 +519,6 @@ void TO_forward_telemetry(void)
     {
        CFE_SB_status = CFE_SB_RcvMsg(&PktPtr, TO_Tlm_pipe, CFE_SB_POLL);
 
-       OS_printf("TO_forward_telemetry()");
-
        if ( (CFE_SB_status == CFE_SUCCESS) && (suppress_sendto == FALSE) )
        {
           size = CFE_SB_GetTotalMsgLength(PktPtr);

@@ -73,17 +73,12 @@ SCH_LAB_ScheduleTable_t SCH_LAB_ScheduleTable[SCH_LAB_MAX_SCHEDULE_ENTRIES] =
 //     { SAMPLE_APP_SEND_HK_MID,   4, 0 },
 
 #if 1
-     { SC_1HZ_WAKEUP_MID,    1, 0 },  /* Example of a 1hz packet */
-     { CF_SEND_HK_MID,       4, 0 },
-     { CS_SEND_HK_MID,       4, 0 },
-     { DS_SEND_HK_MID,       4, 0 },
-     { FM_SEND_HK_MID,       4, 0 },
-     { HK_SEND_HK_MID,       4, 0 },
-     { HS_SEND_HK_MID,       4, 0 },
-     { LC_SEND_HK_MID,       4, 0 },
-     { MD_SEND_HK_MID,       4, 0 },
-     { MM_SEND_HK_MID,       4, 0 },
      { SC_SEND_HK_MID,       4, 0 },
+     { SC_1HZ_WAKEUP_MID,    1, 0 },  /* Example of a 1hz packet */
+     { HS_SEND_HK_MID,       4, 0 },
+     { FM_SEND_HK_MID,       4, 0 },
+     { DS_SEND_HK_MID,       4, 0 },
+     { LC_SEND_HK_MID,       4, 0 },
 
 #endif
 
